@@ -124,7 +124,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: ISidebarProps) => {
           height={300}
           className="absolute opacity-70 z-0"
         />
-        <p className="relative z-10">SOLADIUM</p>
+        {sidebarOpen && <p className="relative z-10">SOLADIUM</p>}
       </div>
       <div className={styles.content}>
         <Menu
