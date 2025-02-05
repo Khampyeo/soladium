@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #000000;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --background-primary: #f5f5f5;
+  --background-secondary: #fff;
+  --border: #e0e0e0;
+
+  --accent-background: #333333;
+  --accent-text: #ffffff;
+
+  --btn-background: #fff;
+  --btn-text: #000000;
+  --btn-border: #bdbdbd;
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 6px;
+    border: none;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+  }
+}
+
+.dark {
+  --primary: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #bdbdbd;
+  --background-primary: #121212;
+  --background-secondary: #1e1e1e;
+  --border: #424242;
+
+  --accent-background: #666666;
+  --accent-text: #ffffff;
+
+  --btn-background: #333333;
+  --btn-text: #ffffff;
+  --btn-border: #666666;
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 6px;
+    border: none;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+  }
+}
+body {
+  color: var(--primary);
+  background-color: var(--background-primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
